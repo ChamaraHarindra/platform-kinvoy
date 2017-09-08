@@ -1,0 +1,70 @@
+//Font embedd Avenir
+@include font-face(avenir, #{$font-path}/avenir-roman);
+//Font embedd BlackJack font
+@include font-face(black-jack, #{$font-path}/black-jack, null, null, woff2 woff);
+//
+//
+.curly-font {
+    font: normal $default-font-size #{$curly-font};
+}
+
+.red-text {
+    color: $secondary-color;
+}
+
+.yellow-text {
+    color: $primary-color;
+}
+
+.white-text {
+    color: $white-color;
+}
+
+.text-14,
+.text-21,
+.text-36,
+.text-48,
+.text-52,
+.text-60,
+.text-64,
+.text-72 {
+    line-height: 100%;
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+.text-21 {
+    font-size: 21px;
+}
+
+.text-36 {
+    font-size: 36px;
+}
+
+.text-48 {
+    font-size: 48px;
+}
+
+.text-52 {
+    font-size: 52px;
+}
+
+.text-60 {
+    font-size: 60px;
+}
+
+.text-64 {
+    font-size: 64px;
+}
+
+.text-72 {
+    font-size: 72px;
+}
+
+.card {
+    .sub-heading {
+        line-height: 130%;
+    }
+}

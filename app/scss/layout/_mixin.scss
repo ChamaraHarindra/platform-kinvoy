@@ -1,0 +1,9 @@
+// Margin-bottom Mixin
+$max: 40;
+$step: 4;
+@for $i from 1 through ceil($max/$step) {
+    $value: ($i)*($step+1);
+    .gap-bottom#{$value} {
+        margin-bottom: ($i)*($step+1px);
+    }
+}

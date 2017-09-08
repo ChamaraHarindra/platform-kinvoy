@@ -1,0 +1,115 @@
+header {
+    min-height: 62px;
+    width: 100%;
+    background: $primary-color;
+    @media(min-width: 992px) {
+        min-height: 113px;
+    }
+}
+
+.logo {
+    margin-top: 10px;
+    position: relative;
+    float: left;
+    @media(min-width: 992px) {
+        float: none;
+    }
+    .logo__text {
+        color: $black-color;
+        position: absolute;
+        left: 115px;
+        top: 50px;
+        line-height: 100%;
+        text-align: center;
+    }
+}
+
+.header-nav {
+    @extend .curly-font;
+    display: block;
+    margin-top: 50px;
+    li {
+        float: left;
+        margin: 0 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        color: $black-color;
+        font-size: 28px;
+        text-transform: capitalize;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.lang-switch {
+    display: block;
+    float: right;
+    margin: 5px 0 0;
+    li {
+        display: inline-block;
+        margin-right: 7px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        @extend .curly-font;
+        color: $secondary-color;
+        background: url(#{$img-path}/background-sprite.png) -74px top no-repeat;
+        display: block;
+        width: 29px;
+        height: 29px;
+        padding-top: 2px;
+        font-size: 20px;
+        text-align: center;
+        &:hover,
+        &.is-selected {
+            color: $white-color;
+            background: url(#{$img-path}/background-sprite.png) -74px -29px no-repeat;
+        }
+    }
+}
+
+.login-cart {
+    float: right;
+    margin-top: 10px;
+    clear: both;
+    .login-link,
+    .cart-link {
+        color: $secondary-color;
+        display: inline-block;
+        margin-right: 10px;
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &:hover {
+            color: $white-color;
+        }
+    }
+    .login-link {
+        .icon-block {
+            background: url(#{$img-path}/background-sprite.png) left top no-repeat;
+        }
+        &:hover {
+            .icon-block {
+                background-position: left -42px;
+            }
+        }
+    }
+    .cart-link {
+        margin-right: 0;
+        .icon-block {
+            background: url(#{$img-path}/background-sprite.png) -37px top no-repeat;
+        }
+        &:hover {
+            .icon-block {
+                background-position: -37px -42px;
+            }
+        }
+    }
+}

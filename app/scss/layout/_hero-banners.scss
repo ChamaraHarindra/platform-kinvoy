@@ -1,0 +1,82 @@
+.hero-banner {
+    background: $primary-color center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    @media(min-width: 992px) {
+        display: block;
+    }
+    span {
+        display: block;
+    }
+    .text {
+        align-items: stretch;
+        width: 100%;
+        padding: 25px;
+        @media(min-width: 992px) {
+            top: 130px;
+            left: 40px;
+            float: left;
+            width: auto;
+            position: relative;
+        }
+    }
+    &.hero-banner--home {
+        background-image: url(#{$img-path}/home-hero.jpg);
+        min-height: 400px;
+        @media(min-width: 992px) {
+            min-height: 630px;
+        }
+        .text {
+            font-size: 21px;
+            padding: 0;
+            @media(min-width: 992px) {
+                left: 32%;
+                transform: translateX(-32%);
+                text-shadow: 0px 0px 12px rgba($white-color, 1);
+            }
+            .red-text {
+                @media(max-width: 992px) {
+                    color: $white-color;
+                    max-height: 205px;
+                    padding: 20px;
+                    background: rgba($secondary-color, .6);
+                }
+            }
+            .text-52 {
+                @media(max-width: 992px) {
+                    font-size: 27px;
+                }
+            }
+            .text-64 {
+                @media(max-width: 992px) {
+                    font-size: 34px;
+                }
+            }
+            .btn {
+                font-size: 24px;
+                margin-bottom: 20px;
+                min-width: 150px
+            }
+        }
+    }
+    &.hero-banner--common-bottom {
+        min-height: 450px;
+        background-image: url(#{$img-path}/hero-bottom.jpg);
+        align-items: center;
+        @media(min-width: 992px) {
+            min-height: 795px;
+            align-items: unset;
+        }
+        .text {
+            align-items: center;
+        }
+        .text-60 {
+            @media(max-width: 992px) {
+                font-size: 30px;
+            }
+        }
+    }
+}

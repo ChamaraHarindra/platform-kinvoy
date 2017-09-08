@@ -1,0 +1,179 @@
+.menu-wrap a {
+    color: $white-color;
+    &:hover,
+    &:focus {
+        color: $primary-color;
+    }
+}
+
+.content-wrap {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.content {
+    position: relative;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        background: rgba($black-color, 0.4);
+        content: '';
+        opacity: 0;
+        transition: opacity 0.3s, transform 0s 0.3s;
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+
+/* Close Button */
+
+.close-button {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    overflow: hidden;
+    text-indent: 16px;
+    border: none;
+    z-index: 1001;
+    background: transparent;
+    color: transparent;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        background: darken($white-color, 20%);
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+
+/* Menu */
+
+.menu-wrap {
+    position: absolute;
+    z-index: 1001;
+    width: 280px;
+    height: 100%;
+    font-size: 1.15em;
+    transform: translate3d(-280px, 0, 0);
+    transition: transform 0.4s;
+}
+
+.menu {
+    position: relative;
+    z-index: 1000;
+    padding: 3em 15px 0;
+}
+
+.menu,
+.close-button {
+    opacity: 0;
+    transform: translate3d(-160px, 0, 0);
+    transition: opacity 0s 0.3s, transform 0s 0.3s;
+    transition-timing-function: cubic-bezier(.17, .67, .1, 1.27);
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    li {
+        display: block;
+    }
+    a {
+        line-height: 100%;
+        display: block;
+        color: $primary-color;
+        padding: 15px 0;
+        border-bottom: 1px solid lighten($secondary-color, 7%);
+        position: relative;
+        &:hover {
+            color: $white-color;
+        }
+    }
+    ul a {
+        font-size: 16px;
+        border-bottom: none;
+        padding-left: 10px;
+    }
+    .mobile-menu__sub {
+        &:after {
+            content: '\f107';
+            font-family: "FontAwesome";
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+    }
+}
+
+
+/* Morph Shape */
+
+.morph-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    fill: $secondary-color;
+}
+
+
+/* Show menu with animation */
+
+.show-menu .menu-wrap,
+.show-menu .content::before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.show-menu .menu-wrap,
+.show-menu .menu,
+.show-menu .close-button,
+.show-menu .morph-shape,
+.show-menu .content::before {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.show-menu .menu,
+.show-menu .close-button {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.show-menu .content::before {
+    opacity: 1;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
