@@ -179,3 +179,13 @@ $("#mobile-menu ul a").click(function() {
     $("#mobile-menu ul a").removeClass("is-selected")
     $(this).addClass("is-selected");
 });
+
+$(document).on('show', '.collapsible-block', function(e) {
+    //$('.accordion-heading i').toggleClass(' ');
+    $(e.target).prev('.collapsible-block__label').addClass('opened');
+});
+
+$(document).on('hide', '.collapsible-block', function(e) {
+    $(this).find('.collapsible-block__label').not($(e.target)).removeClass('opened');
+    //$('.accordion-heading i').toggleClass('fa-chevron-right fa-chevron-down');
+});

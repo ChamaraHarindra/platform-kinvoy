@@ -1,0 +1,43 @@
+<div class="small-cart-backdrop"></div>
+    <div id="small-cart" class="small-cart container-fluid">
+        <div class="row">
+            <div class="col-xs-12 small-cart__header">
+                <div class="small-cart__heading pull-left">Your Cart</div>
+                <div class="small-cart__close fa fa-remove pull-right" aria-hidden="true" id="close-small-cart"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="small-cart-items">
+                    <li>
+                        <a href="#" class="small-cart-items__img">
+                            <img src="images/food-packet.png" alt="" />
+                        </a>
+                        <div class="small-cart-items__desc">
+                            <a href="#" class="name white-text">Kinovy Commander</a>
+                            <div class="qty-price"><span class="qnty">2</span> x <span class="price">€20</span>
+                            </div>
+                        </div>
+                        <a href="#" class="small-cart-items__remove fa fa-remove"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="small-cart__summery">
+            <div class="row">
+                <div class="col-md-6 col-xs-6">Shipping :</div>
+                <div class="col-md-6 col-xs-6 text-right">Free</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-6 text">Total :</div>
+                <div class="col-md-6 col-xs-6 text-right">€20</div>
+            </div>
+        </div>
+        <div class="small-cart__buttons">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" class="btn btn--yellow center-block"><strong>Checkout</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>

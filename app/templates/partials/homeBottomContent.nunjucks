@@ -1,0 +1,45 @@
+<section class="content-area">
+<div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cards">
+                                <div class="card card--red card--full">
+                                    <div class="card__inner clearfix">
+                                        <div class="left text-center">
+                                            <div class="gap-bottom10">
+                                                <div class="yellow-text text-36 curly-font">Pratique</div>
+                                                <span class="white-text">1 sachet de 6 gr de Kinovy = 1 feuille de gélatine</span>
+                                            </div>
+                                            <div class="gap-bottom10">
+                                                <div class="yellow-text text-36 curly-font">Rapide</div>
+                                                <span class="white-text">pas de trempage, Kinovy gélifie à température ambiante</span>
+                                            </div>
+                                            <div class="gap-bottom10">
+                                                <div class="yellow-text text-36 curly-font">Facile</div>
+                                                <span class="white-text">plus de manipulations fastidieuses</span>
+                                            </div>
+                                            <div class="gap-bottom10">
+                                                <div class="yellow-text text-36 curly-font">Economique</div>
+                                                <span class="white-text">le meilleur rapport qualité/prix</span>
+                                            </div>
+                                            <div class="gap-bottom10">
+                                                <div class="yellow-text text-36 curly-font">Hygiénique</div>
+                                                <span class="white-text">les mains n’interviennent plus !</span>
+                                            </div>
+                                            <div class="gap-bottom10">
+                                                <div class="yellow-text text-36 curly-font">Usage étendu</div>
+                                                <span class="white-text">mousses, panna-cota, bavarois, <br/>cheese cakes, etc…</span>
+                                            </div>
+                                        </div>
+                                        <div class="right text-center">
+                                            <div class="curly-font white-text text-36">Les</div>
+                                            <div class="curly-font white-text text-64 gap-bottom20">avantages</div>
+                                            <img src="images/food-packet.png" class="img-responsive center-block" alt="Les avantages" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</section>

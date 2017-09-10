@@ -20,6 +20,10 @@
     color: $white-color;
 }
 
+.black-text {
+    color: $black-color;
+}
+
 .text-14,
 .text-21,
 .text-36,
@@ -37,6 +41,14 @@
 
 .text-21 {
     font-size: 21px;
+}
+
+.text-24 {
+    font-size: 24px;
+}
+
+.text-30 {
+    font-size: 30px;
 }
 
 .text-36 {
@@ -67,4 +79,8 @@
     .sub-heading {
         line-height: 130%;
     }
+}
+
+.text-shadow--white {
+    text-shadow: 0px 0px 12px rgba($white-color, 1);
 }

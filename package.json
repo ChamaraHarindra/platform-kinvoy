@@ -30,6 +30,7 @@
         "gulp-cache": "^0.4.6",
         "gulp-imagemin": "^3.3.0",
         "gulp-liquify": "0.0.6",
+        "gulp-nunjucks-render": "^2.2.1",
         "gulp-sass": "^3.1.0",
         "gulp-sourcemaps": "^2.6.0",
         "gulp-uglify": "^3.0.0",

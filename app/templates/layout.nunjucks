@@ -1,0 +1,61 @@
+<!-- Default HTML head -->
+{% include "partials/head.nunjucks" %}
+<body>
+    <!-- ========================================
+                    Mobile Menu 
+    /======================================== -->
+    {% include "partials/mobileMenu.nunjucks" %}
+
+    <!-- ========================================
+            page content start here 
+    /======================================== -->
+    <div class="content-wrap">
+        <div class="content">
+            <!-- ========================================
+                            Header
+            /======================================== -->
+            {% include "partials/header.nunjucks" %} 
+            
+            {% if homePage %}
+               {% include "partials/homeHeroBanner.nunjucks" %}
+            {% else %}
+               {% include "partials/subPageTitle.nunjucks" %} 
+            {% endif %} 
+            
+
+            <!-- ========================================
+                            Content
+            /======================================== -->
+            
+                <!-- Common content from other pages -->
+                {% block content %} {% endblock %}
+
+            <!-- ========================================
+                        Bottom hero banner
+            /======================================== -->
+            {% include "partials/bottomHeroBanner.nunjucks" %}
+            
+            {% if homePage %}
+                {% include "partials/homeBottomContent.nunjucks" %}
+            {% endif %} 
+            
+            <!-- ========================================
+                            Footer
+            /======================================== -->
+            {% include "partials/footer.nunjucks" %}
+        </div>
+    </div>
+    <!-- ========================================
+                    Small Cart
+    /======================================== -->
+    {% include "partials/smallCart.nunjucks" %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- build:js js/scripts.min.js -->
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

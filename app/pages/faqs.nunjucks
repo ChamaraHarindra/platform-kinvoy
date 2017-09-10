@@ -1,0 +1,145 @@
+{% set title = 'FAQs' %}       
+<!-- base layout file inheritance -->
+{% extends "layout.nunjucks" %}  
+
+{% block content %}           
+<section class="content-area content-area--red">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 curly-font">
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q1" aria-controls="q1">
+                    A base de quoi  Kinovy est-il produit ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q1">
+                    <div class="yellow-text col-md-7">Answer to the first FAQ</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q2" aria-controls="q2">
+                    La gélatine Kinovy est-elle halal ou casher ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q2">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q3" aria-controls="q3">
+                    Kinovy est-il composé de produits artificiels ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q3">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q4" aria-controls="q4">
+                   Kinovy est-il compatible avec un régime alimentaire végétarien ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q4">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q5" aria-controls="q5">
+                   Kinovy contient-il des amandes ou autres fruits secs ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q5">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q6" aria-controls="q6">
+                   Kinovy doit-il être chauffée ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q6">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q7" aria-controls="q7">
+                  En combien de temps j’obtiens ma gélatine ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q7">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q8" aria-controls="q8">
+                    Combien de grammes de kinovy équivalent à une feuille de gélatine ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q8">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q9" aria-controls="q9">
+                    Combien de temps faut-il laisser reposer Kinovy ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q9">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q10" aria-controls="q10">
+                   Peut-on gélifier des produits à base d’alcool ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q10">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+            <div class="collapsible-block no-border">
+                <div class="collapsible-block__label collapsed" data-toggle="collapse" data-target="#q11" aria-controls="q11">
+                   Le gel obtenu est-il transparent ?
+                </div>
+                <div class="collapse collapsible-block__collapse" id="q11">
+                    <div class="yellow-text col-md-7">Non, vu son origine porcine.</div> 
+                    {% include "../templates/partials/faqHelpfulBlock.nunjucks" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>     
+<section class="content-area content-area--white no-padding">    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"> 
+            <div class="recipe-list">
+                <div class="reipe-list__heading">
+                    <div class="yellow-text text-60 curly-font">Les Recettes</div>
+                    <span>Les plus grands pâtissisers ont adopté<br/>Kinovy découvrez leurs recettes</span>
+                </div>
+                <ul class="reipe-list__list curly-font text-30 red-text">
+                    <li>
+                        <img src="images/mousse.png" class="img responsive center-block gap-bottom15" alt="Mousse au Chocolat"/>
+                        <span class="red-font">Mousse au<br/>Chocolat</span>
+                    </li>
+                    <li>
+                        <img src="images/cheese-cake.png" class="img responsive center-block gap-bottom15" alt="Cheese cake Speculoos et framboises"/>
+                        <span class="red-font">Cheese cake<br/>Speculoos et<br/>framboises</span>
+                    </li>
+                    <li>
+                        <img src="images/bavarois.png" class="img responsive center-block gap-bottom15" alt="Bavarois aux 3 couleurs"/>
+                        <span class="red-font">Bavarois aux<br/>3 couleurs</span>
+                    </li>
+                    <li>
+                        <img src="images/panna-cotta.png" class="img responsive center-block gap-bottom15" alt="Panna Cotta"/>
+                        <span class="red-font">Panna Cotta</span>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>    
+{% endblock %}    

@@ -18,6 +18,9 @@
 .white-text {
   color: #ffffff; }
 
+.black-text {
+  color: #000000; }
+
 .text-14,
 .text-21,
 .text-36,
@@ -33,6 +36,12 @@
 
 .text-21 {
   font-size: 21px; }
+
+.text-24 {
+  font-size: 24px; }
+
+.text-30 {
+  font-size: 30px; }
 
 .text-36 {
   font-size: 36px; }
@@ -54,6 +63,9 @@
 
 .card .sub-heading {
   line-height: 130%; }
+
+.text-shadow--white {
+  text-shadow: 0px 0px 12px white; }
 
 .btn {
   height: 48px;
@@ -236,6 +248,12 @@ nav ul li {
   list-style-type: none;
   overflow: hidden; }
 
+.relative {
+  position: relative; }
+
+.block {
+  display: block; }
+
 a {
   color: #da5d4f;
   -webkit-transition: .2s all ease-in-out;
@@ -268,6 +286,9 @@ img {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.no-padding {
+  padding: 0 !important; }
 
 .icon-block {
   width: 37px;
@@ -356,6 +377,50 @@ img {
 .content-area {
   overflow: hidden;
   padding: 50px 0; }
+  .content-area.content-area--red {
+    background: #da5d4f; }
+  .content-area.content-area--yellow {
+    background: #ffcc66; }
+  .content-area.content-area--white {
+    background: #ffffff; }
+
+.sub-title-bar {
+  background: url(../images/sub-title-bar.jpg) center center no-repeat;
+  background-size: cover;
+  height: 230px;
+  position: relative; }
+  .sub-title-bar div {
+    height: 100%; }
+  .sub-title-bar .sub-title-bar__title {
+    position: absolute;
+    bottom: 40px;
+    left: 20px; }
+  .sub-title-bar .sub-title-bar__callout {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: url(../images/white-round.svg) center center no-repeat;
+    background-size: cover; }
+    .sub-title-bar .sub-title-bar__callout .text {
+      -webkit-transform: rotate(-10deg) translate(-50%, -50%);
+          -ms-transform: rotate(-10deg) translate(-50%, -50%);
+              transform: rotate(-10deg) translate(-50%, -50%);
+      position: absolute;
+      top: 47%;
+      left: 53%;
+      font-size: 24px;
+      line-height: 110%; }
+      @media (min-width: 768px) {
+        .sub-title-bar .sub-title-bar__callout .text {
+          font-size: 36px; } }
+    @media (min-width: 768px) {
+      .sub-title-bar .sub-title-bar__callout {
+        width: 198px;
+        height: 198px;
+        top: auto;
+        bottom: 10px; } }
 
 header {
   min-height: 62px;
@@ -497,8 +562,7 @@ footer {
           left: 32%;
           -webkit-transform: translateX(-32%);
               -ms-transform: translateX(-32%);
-                  transform: translateX(-32%);
-          text-shadow: 0px 0px 12px white; } }
+                  transform: translateX(-32%); } }
       @media (max-width: 992px) {
         .hero-banner.hero-banner--home .text .red-text {
           color: #ffffff;
@@ -610,6 +674,99 @@ footer {
         margin-top: 40px;
         float: left;
         width: 40%; } }
+
+.collapsible-block {
+  overflow: hidden;
+  font-size: 28px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  position: relative; }
+  .collapsible-block:after {
+    border-bottom: 1px solid #ffffff;
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50px; }
+  .collapsible-block.no-border {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+    .collapsible-block.no-border:after {
+      display: none; }
+  .collapsible-block .collapsible-block__label {
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 50px;
+    position: relative; }
+    .collapsible-block .collapsible-block__label:before {
+      display: inline-block;
+      content: '\f0d7';
+      font-family: 'FontAwesome';
+      text-align: center;
+      color: #da5d4f;
+      width: 32px;
+      height: 32px;
+      padding: 2px 0 0 0px;
+      background: url(../images/white-round.svg) center center no-repeat;
+      background-size: cover;
+      -webkit-transition: all ease-in-out .2s;
+      transition: all ease-in-out .2s;
+      left: 0px;
+      top: 5px;
+      position: absolute; }
+    .collapsible-block .collapsible-block__label.collapsed:before {
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+  .collapsible-block .collapsible-block__collapse {
+    overflow: hidden;
+    padding-left: 50px; }
+    .collapsible-block .collapsible-block__collapse .btn {
+      line-height: 100%;
+      height: auto; }
+    .collapsible-block .collapsible-block__collapse .col-md-7 {
+      margin: 20px 0 20px 0; }
+      @media (min-width: 768px) {
+        .collapsible-block .collapsible-block__collapse .col-md-7 {
+          margin: 20px 0 0 0; } }
+
+.recipe-list {
+  background: url(../images/female-cook.jpg) center bottom no-repeat;
+  padding-bottom: 350px; }
+  @media (min-width: 768px) {
+    .recipe-list {
+      background-position: right bottom;
+      padding-bottom: 30px; } }
+  .recipe-list .reipe-list__heading {
+    margin-top: 50px; }
+    @media (min-width: 768px) {
+      .recipe-list .reipe-list__heading {
+        padding-right: 190px;
+        text-align: right; } }
+  .recipe-list .reipe-list__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    @media (min-width: 768px) {
+      .recipe-list .reipe-list__list {
+        margin: 30px 280px 0 0; } }
+    .recipe-list .reipe-list__list li {
+      width: 50%;
+      text-align: center; }
+      @media (min-width: 992px) {
+        .recipe-list .reipe-list__list li {
+          width: 25%; } }
+      .recipe-list .reipe-list__list li span {
+        min-height: 140px;
+        display: block; }
 
 .menu-wrap a {
   color: #ffffff; }

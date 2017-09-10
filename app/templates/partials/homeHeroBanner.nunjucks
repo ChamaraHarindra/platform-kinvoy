@@ -1,0 +1,13 @@
+ <!-- ========================================
+                            Home Slider
+            /======================================== -->
+            <section class="hero-banner hero-banner--home">
+                <div class="text text-center text-shadow--white">
+                    <div class="curly-font text-52 red-text gap-bottom10">
+                        <span class="text-64">Réussissez vos</span>pâtisseries et desserts<br/>facilement et rapidement !<br/>
+                    </div>
+                    <span class="hidden-xs hidden-sm">Kinovy est la gélatine des pâtissiers malins: <br/> pratique, rapide et facile. <br/> Kinovy ne nécessite aucun temps de trempage, <br/> elle gélifie à froid !</span>
+                    <a href="#" class="btn btn--white curly-font hidden-md hidden-lg">Lire plus</a>
+                </div>
+            </section>
+            <!-- End Home Sldier module -->

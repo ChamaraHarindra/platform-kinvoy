@@ -1,0 +1,54 @@
+<header>
+                <div class="container">
+                    <div class="row">
+                        <!-- Header logo module -->
+                        <div class="col-md-3 col-xs-7">
+                            <div id="open-button" class="hamburg-menu hidden-md hidden-lg">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="logo">
+                                <img src="images/header-logo.png" class="img-responsive hidden-xs hidden-sm" alt="Kinvoy" />
+                                <img src="images/header-logo--mobile.png" class="img-responsive hidden-md hidden-lg" alt="Kinvoy" />
+                                <div class="logo__text curly-font hidden-xs hidden-sm">la gélatine des<br/>pâtissiers malins</div>
+                            </div>
+                        </div>
+                        <!-- End Header logo module -->
+                        <!-- Header navigation module -->
+                        <div class="col-md-6 hidden-xs hidden-sm">
+                            <nav class="header-nav">
+                                <ul>
+                                    <li><a href="#">à Propos</a></li>
+                                    <li><a href="#">Ingrédients</a></li>
+                                    <li><a href="#">Recettes</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- End Header navigation module -->
+                        <!-- Header Language switcher module -->
+                        <div class="col-md-3 col-xs-5">
+                            <nav class="lang-switch hidden-xs hidden-sm">
+                                <ul>
+                                    <li><a href="#" class="is-selected">Fr</a></li>
+                                    <li><a href="#">Nl</a></li>
+                                    <li><a href="#">En</a></li>
+                                </ul>
+                            </nav>
+                            <div class="login-cart">
+                                <a href="#" class="login-link">
+                                    <div class="icon-block"></div>
+                                    <span class="hidden-xs hidden-sm">Login</span>
+                                </a>
+                                <a href="#" class="cart-link" id="open-cart">
+                                    <div class="icon-block"></div>
+                                    <span>(2)</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Header Language switcher module -->
+                    </div>
+                </div>
+            </header>

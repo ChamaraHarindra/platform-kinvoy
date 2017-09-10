@@ -1,0 +1,15 @@
+<section class="sub-title-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 relative">
+                <span class="sub-title-bar__title text-60 curly-font text-shadow--white red-text">Les faqs</span>
+                <span class="block sub-title-bar__callout text-center">
+                    <span class="text block red-text curly-font">
+                        <span class="block">Commandez</span>
+                        <small>Maintenant!</small>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>

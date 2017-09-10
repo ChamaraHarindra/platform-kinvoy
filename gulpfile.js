@@ -7,10 +7,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
-var wrap = require('gulp-wrap');
-var connect = require('connect');
-var serveStatic = require('serve-static');
-var serveIndex = require('serve-index');
+var nunjucksRender = require('gulp-nunjucks-render');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
@@ -47,17 +44,27 @@ gulp.task('sass', function() {
         }));
 })
 
-gulp.task('layout', function() {
-    return gulp.src(['app/**/*.html', '!app/layout.html'])
-        .pipe(wrap({ src: 'app/layout.html' }))
-        .pipe(gulp.dest('dist'));
+gulp.task('nunjucks', function() {
+    // Gets .html and .nunjucks files in pages
+    return gulp.src('app/pages/**/*.+(html|nunjucks)')
+        // Renders template with nunjucks
+        .pipe(nunjucksRender({
+            path: ['app/templates']
+        }))
+        // output files in app folder
+        .pipe(gulp.dest('app'))
+        .pipe(browserSync.reload({ // Reloading with Browser Sync
+            stream: true
+        }));
 });
+
+
 
 // Watchers
 gulp.task('watch', function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
-    gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch('app/pages/**/*.+(html|nunjucks)', ['nunjucks']);
 })
 
 

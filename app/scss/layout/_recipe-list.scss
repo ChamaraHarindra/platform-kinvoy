@@ -1,0 +1,37 @@
+.recipe-list {
+    background: url(#{$img-path}/female-cook.jpg) center bottom no-repeat;
+    padding-bottom: 350px;
+    @media(min-width: 768px) {
+        background-position: right bottom;
+        padding-bottom: 30px;
+    }
+    .reipe-list__heading {
+        margin-top: 50px;
+        @media(min-width: 768px) {
+            padding-right: 190px;
+            text-align: right;
+        }
+    }
+    .reipe-list__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 0 0 0;
+        padding: 0;
+        list-style-type: none;
+        align-items: flex-end;
+        @media(min-width: 768px) {
+            margin: 30px 280px 0 0;
+        }
+        li {
+            width: 50%;
+            text-align: center;
+            @media(min-width: 992px) {
+                width: 25%;
+            }
+            span {
+                min-height: 140px;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{% set title = 'Home Page' %}   
+{% set homePage = true %}  
+<!-- base layout file inheritance -->
+{% extends "layout.nunjucks" %} 
+
+{% block content %}   
+<section class="content-area">
+<div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cards">
+                                <div class="card card--yellow text-center">
+                                    <div class="card__inner card__inner--btn-bottom">
+                                        <img src="images/food-packets.png" alt="Commendes" class="food-packets img-responsive" />
+                                        <div class="text-48 curly-font red-text">Commander</div>
+                                        <div class="gap-bottom20">
+                                            Réussisez toutes vos desserts<br/>en adoptant Kinovy<br/>dès aujourd’hui.
+                                        </div>
+                                        <a href="#" class="btn btn--white curly-font btn--bottom-center">Je commande</a>
+                                    </div>
+                                </div>
+                                <div class="card card--white text-center">
+                                    <div class="card__inner card__inner--btn-bottom">
+                                        <div class="text-36 curly-font red-text sub-heading">Votre Gélatine <br/>facilement & sans tracas</div>
+                                        <div class="gap-bottom20">
+                                            <span class="red-text">1 feuille de gélatine = 1 sachet de 6gr</span> <br/><br/> Diluez le contenu d’un sachet <br/> dans l’eau à température ambiante. Puis mixez à vitesse réduite <br/> pendant 30 secondes.
+                                            <br/><br/>Plus simple, c’est difficile !
+                                        </div>
+                                        <a href="#" class="btn btn--yellow curly-font btn--bottom-center">Lire plus</a>
+                                    </div>
+                                </div>
+                                <div class="card card--red text-center">
+                                    <div class="card__inner card__inner--btn-bottom">
+                                        <div class="text-48 curly-font yellow-text">Recettes</div>
+                                        <div class="white-text">
+                                            Kinovy est l’ingrédient malin pour <br/>réussir vos mousses, panna-cota, <br/>bavarois, cheese cakes, …
+                                        </div>
+                                        <img src="images/tarte.png" alt="Commendes" class="img-responsive center-block" />
+                                        <a href="#" class="btn btn--white curly-font btn--bottom-center">Les recettes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                </section>      
+{% endblock %} 
